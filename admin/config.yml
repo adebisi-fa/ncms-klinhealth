@@ -3,3 +3,15 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: "assets/images/uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - label: "Pages"
+    name: pages
+    files:
+      - label: "Home Page"
+        name: home
+        file: index.html
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Logo, name: logo, widget: image }

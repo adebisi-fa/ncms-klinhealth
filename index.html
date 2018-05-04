@@ -1,7 +1,9 @@
 --- 
 # Feel free to add content and custom Front Matter to this file. # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default 
-description: Home Page
+title: "KLIN Health"
+description: "Healthcare . . . to the neXt Level!"
+logo: "/assets/images/klinhealth.jpg"
 ---
 
 <br/>
@@ -9,15 +11,15 @@ description: Home Page
 <div class="container">
     <div class="row">
         <div class="col-12 text-center">
-            <img src="assets/images/klinhealth.jpg" style="width: 250px;" />
+            <img src="{{page.logo}}" style="width: 250px;" />
             <br/>
             <br/>
-            <h1 style="font-size: 30px;">KLIN Health</h1>
+            <h1 style="font-size: 30px;">{{page.title}}</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
-            Healthcare . . . to the NexT Level!
+            {{page.description}}
         </div>
     </div>
 </div>
