@@ -12,6 +12,7 @@ collections:
         name: home
         file: index.html
         fields:
+          - { label: Layout, name: layout, widget: string }
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - { label: Logo, name: logo, widget: image }
