@@ -1,8 +1,21 @@
 ---
-title: This is super cool
+layout: default
 ---
 
-<h2>This is the new home</h2>
-
-<br/><br/>
-{{content}}
+<br/>
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="{{page.logo}}" style="width: 250px;" />
+            <br/>
+            <br/>
+            <h1 style="font-size: 30px;">{{page.title}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            {{page.description}}
+        </div>
+    </div>
+</div>
